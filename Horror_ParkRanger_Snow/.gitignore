@@ -1,6 +1,6 @@
 # This .gitignore file should be placed at the root of your Unity project directory
 #
-# Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
+# Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
 /[Ll]ibrary/
 /[Tt]emp/
@@ -14,8 +14,8 @@
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
 
-# Recordings can get excessive in size
-/[Rr]ecordings/
+# Asset meta data should only be ignored when the corresponding asset is also ignored
+!/[Aa]ssets/**/*.meta
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
@@ -46,6 +46,46 @@ ExportedObj/
 *.mdb
 *.opendb
 *.VC.db
+*.wav
+*.meta
+
+# Custom
+
+*.jpg
+*.jpeg
+*.anim
+*.mat
+*.prefab
+*.tga
+*.exr
+*.png
+*.fbx
+*.asset
+*.vfx
+*.unity
+*.preset
+*.lighting
+*.ogg
+*.controller
+*.max
+*.ttf
+*.psd
+*.renderTexture
+*.json
+*.txt
+*.mp3
+*.pdf
+*.obj
+*.shader
+*.tif
+*.xcf
+*.otf
+*.mtl
+*.terrainlayer
+*.cginc
+*.aiff
+
+
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -59,7 +99,6 @@ sysinfo.txt
 *.apk
 *.aab
 *.unitypackage
-*.app
 
 # Crashlytics generated file
 crashlytics-build.properties
